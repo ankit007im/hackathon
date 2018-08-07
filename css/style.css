@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
 body {
   font-family: 'Poppins', tahoma;
@@ -69,12 +69,25 @@ ul, ol {
 
 .input {
   height: 40px;
-  width: 100%;
+  width: 60%;
   border: 2px solid #dadada;
   padding: 0px 15px;
   border-radius: 2px;
   -webkit-transition: 0.3s border;
   transition: 0.3s border;
+}
+
+
+@media only screen and (max-width: 767px) {
+	.input {
+  height: 40px;
+  width: 90%;
+  border: 2px solid #dadada;
+  padding: 0px 15px;
+  border-radius: 2px;
+  -webkit-transition: 0.3s border;
+  transition: 0.3s border;
+}
 }
 
 textarea.input {
@@ -113,7 +126,7 @@ textarea.input {
 .section-title .title {
   position: relative;
   text-transform: capitalize;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 42px;
   overflow: hidden;
 }
@@ -228,11 +241,21 @@ textarea.input {
 
 .main-nav li a {
   position: relative;
+  padding: 30px 30px;
+  color: #0b0f28;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+@media only screen and (max-width: 767px) {
+.main-nav li a {
+  position: relative;
   padding: 30px 15px;
   color: #0b0f28;
   text-transform: uppercase;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
 }
 
 #header.transparent-navbar .main-nav li a {
@@ -325,7 +348,7 @@ textarea.input {
 ===========================================================*/
 
 #home {
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -344,7 +367,9 @@ textarea.input {
   text-transform: capitalize;
   font-weight: 900;
   color: #FFF;
+  font-size:100px;
 }
+
 
 .home-content h4 {
   color: #FFF;
@@ -544,11 +569,21 @@ textarea.input {
 \*----------------------------*/
 
 .speaker-modal .modal-dialog {
-  width: 100%;
+  width: 50%;
   max-width: 970px;
   margin-top: 60px;
   margin-bottom: 60px;
 }
+  
+  @media only screen and (max-width: 767px){
+  .speaker-modal .modal-dialog {
+  width: 95%;
+  max-width: 970px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  
+  }
+  }
 
 .speaker-modal .modal-content {
   border: none;
@@ -581,11 +616,12 @@ textarea.input {
 
 .speaker-modal .modal-body {
   padding: 30px;
+  background: url(../img/login4.jpg);
+  height:480px;
+  
 }
 
-.speaker-modal .speaker-modal-img>img {
-  width: 100%;
-}
+
 
 .speaker-modal .speaker-modal-content .speaker-name {
   display: inline-block;
@@ -1019,7 +1055,7 @@ textarea.input {
 
 @media only screen and (max-width: 767px) {
   .home-content h1 {
-    font-size: 31px;
+    font-size: 50px;
   }
   .page-wrapper-content h1 {
     font-size: 31px;
@@ -1341,3 +1377,130 @@ textarea.input {
 
 /*flipflkp   */
 
+
+
+
+.id-card {
+  flex-basis: 100%;
+  border: 2px solid white;
+
+  margin: auto;
+  color: #fff;
+  
+  background-color:white;
+  box-shadow: 0px 0px 10px 1px black, inset 0px 0px 3px 1px red;
+  width:600px;
+  height:200px;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.id-card:hover {
+  flex-basis: 100%;
+  border: 2px solid white;
+ 
+  margin: auto;
+  color: #fff;
+ 
+  background-color:white;
+  box-shadow: 0px 0px 15px 2px black, inset 0px 0px 15px 2px red;
+  width:600px;
+  height:200px;
+  padding-left:30px;
+  padding-left:30px;
+}
+.profile-row {
+  display: flex;
+}
+
+
+
+.profile-row .desc {
+  flex-grow: 66.6%;
+  padding: 1em;
+  
+  color: black;
+  
+  letter-spacing: 0px;
+  text-align:center;
+}
+
+.profile-row .desc .bold{
+  text-align:center;
+  font-size:30px;
+  
+  
+}
+
+
+@media only screen and (max-width: 767px) {
+.id-card {
+  flex-basis: 100%;
+  border: 2px solid white;
+  max-width: 30em;
+  margin: auto;
+  color: #fff;
+  padding: 1em;
+  background-color:white;
+  box-shadow: 0px 0px 10px 1px black, inset 0px 0px 3px 1px red;
+  width:360px;
+  height:240px;
+}
+
+.id-card:hover {
+  flex-basis: 100%;
+  border: 2px solid white;
+  max-width: 30em;
+  margin: auto;
+  color: #fff;
+  padding: 1em;
+  background-color:white;
+  box-shadow: 0px 0px 15px 2px black, inset 0px 0px 15px 2px red;
+  width:360px;
+  height:240px;
+}
+
+.profile-row .desc {
+  flex-grow: 66.6%;
+  padding: 1em;
+  
+  color: black;
+  
+  letter-spacing: 0px;
+  text-align:center;
+}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+.profile-row .desc .bold{
+  text-align:center;
+  font-size:22px;
+  
+  
+}
+}
+
+
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+	
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(90deg, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+	opacity:0.2;
+}
